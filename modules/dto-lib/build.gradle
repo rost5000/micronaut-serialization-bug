@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor('org.projectlombok:lombok:1.18.30')
+    compileOnly('org.projectlombok:lombok:1.18.30')
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.1'
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
+}

@@ -1,0 +1,9 @@
+rootProject.name = "micronaut-serializer-json-type-info"
+
+include 'dto-application'
+include 'dto-lib'
+include 'dto-micronaut-lib'
+
+project(':dto-application').projectDir = file 'modules/dto-application'
+project(':dto-lib').projectDir = file 'modules/dto-lib'
+project(':dto-micronaut-lib').projectDir = file 'modules/dto-micronaut-lib'
