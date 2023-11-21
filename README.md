@@ -14,6 +14,11 @@ The project contains the following modules:
 
 Assume that I have thirdparty library that generates only Jackson annotation, I cannot influence to this lib. I try to import and configure that as micronaut library dependency.
 
+The library represents that we can receive a several types of requests or undefined request with common parameters, so, in this project, we can see:
+
+1. [`Request`](./modules/dto-lib/src/main/java/com/example2/dtos/Request.java) contains the common properties that can be use in all requests. Some of the properties can be nullable
+2. [`RequestType1`](./modules/dto-lib/src/main/java/com/example2/dtos/RequestType1.java) when we receive some request with defined parameters
+3. [`RequestUndefined`](./modules/dto-lib/src/main/java/com/example2/dtos/RequestUndefined.java) when we receive undefined type of the request with unspecified parameters
 ## Bug reproducing
 
 Run the following command:
